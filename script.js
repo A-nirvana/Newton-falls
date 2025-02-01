@@ -69,9 +69,9 @@ const newt = () => {
     }
 }
 
-btn.addEventListener("click", newt());
+btn.addEventListener("click", newt);
 input.addEventListener('keyup', function(event) {
     if (event.key === 'Enter') {
-        setBackground();
+        newt();
     }
 });
